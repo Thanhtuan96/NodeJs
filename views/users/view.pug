@@ -1,36 +1,13 @@
 extends ../layouts/common
 
 block content
-  nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    a.navbar-brand(href='/') 
-      img(src="data:image/png;base64,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" width="30" height="30" class="d-inline-block align-top" alt="")
-      Bootstrap
-    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarNavDropdown.collapse.navbar-collapse
-      ul.navbar-nav
-        li.nav-item.active
-          a.nav-link(href='/')
-            | Home 
-            span.sr-only (current)
-        li.nav-item
-          a.nav-link(href='/users') Users
-        li.nav-item
-          a.nav-link(href='#') Pricing
-        li.nav-item.dropdown
-          a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-            | Dropdown link
-          .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            a.dropdown-item(href='#') Something else here
-
-  .card.border-success.mt-3.mb-3(style='max-width: 18rem;')
-    .card-header Name
-    .card-body.text-success
-      h5.card-title
-      p.card-text
-        span= user.name
+  
+.card.border-success.mt-3.mb-3(style='max-width: 18rem;')
+  .card-header Name
+  .card-body.text-success
+    h5.card-title
+    p.card-text
+      span= user.name
 
 
 
