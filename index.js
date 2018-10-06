@@ -12,7 +12,7 @@ app.set('views','./views');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extented: true}));
-
+app.use(express.static('public'));
 app.get('/',function(req, res){
     res.render('index',{
         name: 'AAA'
