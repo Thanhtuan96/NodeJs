@@ -18,6 +18,9 @@ app.get('/',function(req, res){
         name: 'AAA'
     });
 });
+app.get('/login', function(req,res){
+    res.render('./login/index');
+});
 
 app.use('/users', userRouter);
 

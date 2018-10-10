@@ -1,0 +1,46 @@
+extends ../layouts/commonLogin
+
+block content
+
+    .pos-f-t.fixed-top
+        #navbarToggleExternalContent.collapse
+            .bg-dark.p-4
+                a(href='/')
+                h5.text-white.h4
+                    i.fas.fa-camera.mr-2
+                    | MyBlog
+                span.text-muted Together to find some new Experience throuh lens
+        nav.navbar.navbar-dark.bg-dark
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarToggleExternalContent', aria-controls='navbarToggleExternalContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+    .container-fluid.main-form
+        form.form-login
+            span
+            h1(style='text-align:center;') Welcome
+            .form-group.row.mt-4
+            label.col-sm-2.col-form-label(for='staticEmail') Email
+            .col-sm-12.ml-1
+                input#staticEmail.form-control(type='text', placeholder='Email')
+            .form-group.row
+            label.col-sm-2.col-form-label(for='inputPassword') Password
+            .col-sm-12.ml-1
+                input#inputPassword.form-control(type='password', placeholder='Password')
+            div
+            .select
+                div
+                    input(type='checkbox', value='')
+                    small remember me
+                div
+                    input(type='checkbox', value='')
+                    small remember me
+            .login-button.mt-3
+                input.btn.btn-primary(name='', id='', type='button', value='login')
+            .mt-4
+            small
+                | No have Account Yet 
+                a(href='#') Click Here
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js', integrity='sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em', crossorigin='anonymous')

@@ -1,0 +1,120 @@
+/* HEADER style */
+.menubar {
+    background-color:rgba(23, 27, 27, 0.26);
+    color: gray;
+}
+.menubar a,li {
+    color: #7a8fffde;
+}
+
+.menubar a:hover {
+    background-color: #7b808052;
+}
+
+.mainPic {
+    background-image: url('https://images.unsplash.com/photo-1534793785986-dfbb9a253f30?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7d5b7c331e9dd59d72eebc29d1e0c0ae&auto=format&fit=crop&w=750&q=80');
+    height: 700px;
+    background-size: cover;
+    background-position: center center;
+}
+.main-display .mainPic .overlay {
+    height: 100%;
+    width: auto;
+    background: linear-gradient(0deg, rgba(0,0,0,0.7879699248120301) 31%, rgba(0,0,0,0.11528361344537819) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.overlay a {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 2rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 300px;
+    text-decoration: none;
+    background-color: #4e4b4b45;
+    padding: 2px 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+}
+
+.linktojoin:hover a {
+    transform: translate(-30px);
+    transition: 250ms;
+}
+
+/* BODY style */
+
+.text{
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text p {
+
+    margin: 8px 20px;
+    position: relative;
+}
+
+.text p::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    background-color: black;
+    top: 12px;
+    left: -156px;
+}
+
+.text p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 150px;
+    background-color: black;
+    top: 12px;
+    right: -156px;
+}
+.poster {
+    background: #C9CCD3;
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    border-radius: 15px;
+    }
+.main-body .conponent{
+    margin-top: 0.5rem;
+    border-bottom: 1px solid #46424247;
+    border-right: 1px solid #46424247;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+.main-body .conponent img {
+    border-radius: 10px;
+    box-shadow:8px 9px 17px #ada9a9e0;
+}
+
+.main-body img:hover {
+    transform: scale(1.035);
+    transition: all 450ms;
+}
+
+
+.footer {
+    background-color: #484848c7;
+    height: 150px;
+    color: white;
+    text-align: center;
+}
+/* 
+.footer span {
+   
+} */

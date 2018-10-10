@@ -1,6 +1,100 @@
-extends ./layouts/common.pug
+extends ./layouts/common
 
 block content
-h1 HelloWorld #{name}
- 
- 
+
+    .main-display 
+        .mainPic
+            .overlay
+                span.sologan
+                    p Love Photograph
+                span.linktojoin
+                    a(href='#')
+                        | Want To Join! And 
+                        i.fas.fa-camera
+    .text
+     span
+        p Today&apos;s Review
+    .container-fluid.poster
+     .row
+        .col-md-9.main-body
+         .row.conponent
+            .col-md-6
+                img.img-fluid(src='https://images.unsplash.com/photo-1537044751776-d5fb12da424d?ixlib=rb-0.3.5&s=95cca22f19be097012ef50a4cbe26347&auto=format&fit=crop&w=889&q=80', alt='')
+            .col-md-6
+                h2 Title
+                p
+                    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem voluptatem cum quaerat officia fugit consequuntur magni. Sunt nihil ipsum quidem ea? Ut, labore cum necessitatibus sint nesciunt reprehenderit eos?
+                a(href='#')
+                    | See more
+                    i.fas.fa-arrow-right
+         .row.conponent.d-flex.flex-row-reverse
+            .col-md-6
+                img.img-fluid(src='https://images.unsplash.com/photo-1537044751776-d5fb12da424d?ixlib=rb-0.3.5&s=95cca22f19be097012ef50a4cbe26347&auto=format&fit=crop&w=889&q=80', alt='')
+            .col-md-6
+                h2 Title
+                p
+                    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem voluptatem cum quaerat officia fugit consequuntur magni. Sunt nihil ipsum quidem ea? Ut, labore cum necessitatibus sint nesciunt reprehenderit eos?
+                a(href='#')
+                    | See more
+                    i.fas.fa-arrow-right
+         .row.conponent
+            .col-md-6
+                img.img-fluid(src='https://images.unsplash.com/photo-1537044751776-d5fb12da424d?ixlib=rb-0.3.5&s=95cca22f19be097012ef50a4cbe26347&auto=format&fit=crop&w=889&q=80', alt='')
+            .col-md-6
+                h2 Title
+                p
+                    | Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorem voluptatem cum quaerat officia fugit consequuntur magni. Sunt nihil ipsum quidem ea? Ut, labore cum necessitatibus sint nesciunt reprehenderit eos?
+                a(href='#')
+                    | See more
+                    i.fas.fa-arrow-right
+        .col-md-3(style='background-color: white;')
+            table.table
+                thead
+                tr
+                    th(scope='col') Rank
+                    th(scope='col') First
+                    th(scope='col') Last
+                    th(scope='col') Score
+                tbody
+                tr
+                    th(scope='row') 1
+                    td Mark
+                    td Otto
+                    td @mdo
+                tr
+                    th(scope='row') 2
+                    td Jacob
+                    td Thornton
+                    td @fat
+                tr
+                    th(scope='row') 3
+                    td Larry
+                    td the Bird
+                    td @twitter
+    nav.mt-2(aria-label='Page navigation example mt-')
+        ul.pagination.justify-content-center
+            li.page-item
+                a.page-link(href='#') Previous
+            li.page-item
+                a.page-link(href='#') 1
+            li.page-item
+                a.page-link(href='#') 2
+            li.page-item
+                a.page-link(href='#') 3
+            li.page-item
+                a.page-link(href='#') Next
+    .row.footer
+        .col-md-9
+         span @copyright by ThanhTuan
+        .col-md-3
+            a(href='#')
+             i.fab.fa-facebook
+            a(href='#')
+             i.fab.fa-instagram
+            a(href='#')
+             i.far.fa-envelope
+    // Optional JavaScript
+    // jQuery first, then Popper.js, then Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js', integrity='sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em', crossorigin='anonymous')
