@@ -35,3 +35,9 @@ module.exports.postCreate = function(req,res){
     db.get('users').push(req.body).write();
     res.redirect('/users');
 };
+module.exports.getDelete = function(req,res){
+    var id = req.path.split('/').splice(2).toString();
+    var afterDelete = db.get('users').remove({id:id}).write();
+    console.log(afterDelete);
+     res.redirect('/users')
+    };

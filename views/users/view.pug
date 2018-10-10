@@ -3,11 +3,12 @@ extends ../layouts/common
 block content
   
   .card.border-success.mt-3.mb-3(style='max-width: 18rem;')
-    .card-header Name
+    .card-header 
+      span= user.name
     .card-body.text-success
       h5.card-title
       p.card-text
-        span= user.name
+        span= user.phone
 
 
 

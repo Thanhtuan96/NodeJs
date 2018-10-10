@@ -1,29 +1,9 @@
 {
   "users": [
     {
-      "name": "khuat hoang thanh tuan",
-      "phone": "07015681996",
-      "id": "lqx16oFc0"
-    },
-    {
-      "name": "khuat tat vu",
+      "name": "Khuất Tất Vũ",
       "phone": "0983317146",
-      "id": "y3ybFEXZj"
-    },
-    {
-      "name": "Hoang Kim Hanh",
-      "phone": "01644923506",
-      "id": "M2ZEdP4LS"
-    },
-    {
-      "name": "Diệu Hoài",
-      "phone": "0123123213",
-      "id": "ylTmbhdix"
-    },
-    {
-      "name": "Hoàng Tuấn Anh",
-      "phone": "97328974892374",
-      "id": "xufQher8J"
+      "id": "qRa5MyOoS"
     }
   ]
 }

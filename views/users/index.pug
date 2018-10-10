@@ -16,5 +16,6 @@ block content
         td=  user.name
         td= user.phone
         td
-         a(href='/users/'+ user.id) View
-         button(id= user.id) Delete
+         a.btn.btn-light(href='/users/'+ user.id) View
+         a.btn.btn-blue(href='/users/delete/'+ user.id)
+          i.fas.fa-trash

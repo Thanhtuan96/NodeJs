@@ -14,6 +14,8 @@ router.get('/search',controller.search);
 router.get('/create', controller.create);
 
 router.get('/:id', controller.get);
+ 
+router.get('/delete/:id', controller.getDelete);
 
 router.post('/create', validate.postCreate, controller.postCreate);
 
