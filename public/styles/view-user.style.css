@@ -1,0 +1,6 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1531975474574-e9d2732e8386?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ee5ac1eb783e6f41814e69000298d55f&auto=format&fit=crop&w=634&q=80');
+    height: 100%;
+    max-width: auto;
+    background-size: cover;
+}

@@ -11,7 +11,7 @@
 
 .form-login {
     height: 30rem;
-    padding: 2.5rem 1.5rem;
+    padding: 2.02rem 1.8rem;
     background-color: #efefef73;
     border-radius: 15px;
 }
@@ -39,7 +39,7 @@
 }
 
 
-.login-button input {
+.login-button button {
     width: 100%;
     animation: changecolor 3s infinite;
     transition: animation 900ms;
