@@ -1,16 +1,11 @@
 {
   "users": [
     {
-      "name": "Khuất Tất Vũ",
-      "phone": "0983317146",
-      "id": "qRa5MyOoS"
-    },
-    {
       "name": "Khuất Hoàng Thanh Tuấn",
       "phone": "07015681996",
       "id": "xbXR-z_mj",
       "email": "chip.ntt@gmail.com",
-      "password": "22032015"
+      "password": "aebcfec28c68e2173c32adb4264b0ac8"
     },
     {
       "name": "Hoàng Kim Hạnh",
@@ -21,6 +16,22 @@
       "name": "Khuất Thị Quỳnh Trang",
       "phone": "0962833753",
       "id": "whPVL1IC5"
+    },
+    {
+      "name": "Diệu Hoài",
+      "phone": "3248932432423",
+      "id": "IUCDlifoh"
+    },
+    {
+      "name": "Hoàng Tuấn Anh",
+      "phone": "07015681234234",
+      "id": "G1MOWXOec"
+    },
+    {
+      "name": "khuat hoang thanh tuan",
+      "phone": "09843759872394",
+      "email": "2116401@asia-u.ac.jp",
+      "id": "7GE8CEyMw"
     }
   ]
 }

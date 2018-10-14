@@ -24,7 +24,6 @@ module.exports.create = function(req,res){
 
 module.exports.get =  function(req,res){
     var id = req.params.id;
-
     var user = db.get('users').find({id :id}).value();
     res.render('users/view', {
         user: user
@@ -32,13 +31,35 @@ module.exports.get =  function(req,res){
 };
 
 module.exports.postCreate = function(req,res){
+    console.log(req.body);
     req.body.id = shortid.generate();
     db.get('users').push(req.body).write();
     res.redirect('/users');
 };
+
 module.exports.getDelete = function(req,res){
     var id = req.path.split('/').splice(2).toString();
     var afterDelete = db.get('users').remove({id:id}).write();
     console.log(afterDelete);
-     res.redirect('/users')
-    };
+     res.redirect('/users') 
+};
+
+// module.exports.edit = function(req,res){
+//     var id = req.params.id;
+//     var users = db.get('users').find({id:id}).value();
+
+//     res.render('users/edit',{
+//         user: users
+//     });
+// };
+
+
+// module.exports.postEdit = function(req,res){
+//     console.log(res.body);
+//     var id = req.params.id;
+//     var phone = req.body.phone;
+//     var email = req.body.email;
+    
+//     db.get('users').push(res.body).write();
+//     res.render('/users');
+// };

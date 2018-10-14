@@ -21,6 +21,10 @@ router.get('/:id', controller.get);
  
 router.get('/delete/:id', controller.getDelete);
 
+
 router.post('/create', validate.postCreate, controller.postCreate);
+
+// router.get('/edit/:id', controller.edit);
+// router.post('/edit/:id', controller.postEdit);
 
 module.exports = router;

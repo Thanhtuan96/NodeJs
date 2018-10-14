@@ -10,12 +10,15 @@ block content
       tr
         th Name
         th Phone
+        th email
         th Actions
       each user in users
-       tr
-        td=  user.name
-        td= user.phone
-        td
-         a.btn.btn-light(href='/users/'+ user.id) View
-         a.btn.btn-blue(href='/users/delete/'+ user.id)
-          i.fas.fa-trash
+        tr
+          td= user.name
+          td= user.phone
+          td= user.email
+          td
+            a.btn.btn-light(href='/users/'+ user.id) View
+            a.btn.btn-blue(href='/users/delete/'+ user.id)
+              i.fas.fa-trash
+            a.btn.btn-ble(href='/users/edit/'+ user.id) Edit

@@ -1,0 +1,16 @@
+extends ../layouts/common
+
+block content
+
+    form.ml-5(method = "POST")
+        .form-group
+            label(for="name") Name
+            input#name.form-control(name = "name", type="text", value= user ? user.name : "")
+        .form-group
+            label(for="phone") Phone
+            input#phone.form-control(name = "phone", type="text", value= user ? user.phone : "")
+            .form-group
+            label(for="email") Email
+            input#email.form-control(name = "email", type="text", value= user ? user.email : "")
+
+        button Edit
